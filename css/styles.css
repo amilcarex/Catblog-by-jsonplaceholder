@@ -991,7 +991,8 @@ padding-bottom:15px;
     }
 
     .post-page .image-post img{
-        width: 95%;
+        width: 100%;
+        height: 80%;
     }
     
     
