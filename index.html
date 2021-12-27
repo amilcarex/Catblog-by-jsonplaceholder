@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatBlog de JSONPlaceholder</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/normalMode.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+
+<body class="home-page">
+    <div class="placeholder-header" id="placeholder-header"></div>
+    <div class="header" id="header">
+        <div class="navigation-header">
+            <div class="container-logo">
+                <a href="/index.html" class="d-flex"><img src="/images/logo.png" alt="logo">
+                    <span>JSONPlaceholder</span>
+                </a>
+            </div>
+            <div class="mobile-menu-container">
+                <div class="mobile-menu" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <nav class="menu mobile-navigation" id="mobile-navigation">
+                    <a href="/index.html" class="d-flex logo"><img src="/images/logo.png" alt="logo">
+                        <span>JSON</span>
+                    </a>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="tablet-menu">
+                <nav class="menu navigation">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="form-container" id="form-container">
+            <div class="container-close" id="container-close">
+            <span class="icon-close"><i class="fas fa-times"></i></span>
+            </div>
+            <form action="" method="POST" class="form">
+                <h2 class="form-title">
+                    Tu Post
+                </h2>
+                <div class="form-group">
+                    <label for="user">User ID</label>
+                    <input type="text" name="user" id="user">
+                </div>
+
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title">
+                </div>
+
+                <div class="form-group">
+                    <label for="body">Body</label>
+                    <textarea name="body" id="body" ></textarea>
+                </div>
+
+                <div class="container-buttons-form">
+                    <button id="cancel-form">Cancelar</button>
+                    <button type="submit">Guardar</button>
+                </div>
+            </form>
+        </div>
+        <div class="container-body">
+            <div class="background home"></div>
+            <div class="create">
+                <h2 class="title create-post">
+                    Crea tu Propio Post
+                </h2>
+                <p class="subtitle subtitle-1 create-post">
+                   Puedes crear, editar su contenido o incluso eliminar los posts que observas
+                </p>
+                <p class="subtitle subtitle-2 create-post">
+                    Solo debes dar click en el botón "CREAR" para hacer tu post
+                </p>
+                <div class="container buttons d-flex">
+                    <button class="button button-create" value="" id="button-create">Crear</button>
+                </div>
+            </div>
+
+            <div class="container-list" id="container-list">
+                <div class="articles list-posts" id="list-posts">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+    </div>
+    <div class="sidebar-backdrop d-none" id="sidebar-backdrop"></div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/scripts.js"></script>
+    
+</body>
+
+</html>
