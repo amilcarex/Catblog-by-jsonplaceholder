@@ -5,8 +5,9 @@
     document.addEventListener('DOMContentLoaded', function () {
 
         eventListeners();
-    });
 
+    });
+    
     var Toast = Swal.mixin({
         toast: true,
         position: 'top-end',
@@ -44,6 +45,7 @@
         initList();
         generatePost();
 
+        document.querySelector('#form-test').addEventListener('submit', getValue)
     }
 
     var arr= [];
